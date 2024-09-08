@@ -26,8 +26,7 @@ jobs:
 
       - name: Copy files from source to target
         run: |
-          cp -r source-repo/* ./
-          cp -r source-repo/.[!.]* ./
+          rsync -a --delete --exclude '.git' --exclude '.github' source-repo/ ./
       
       - name: Commit and push changes
         run: |
