@@ -35,5 +35,5 @@ jobs:
           git add .
           rm -rf /tmp/source-repo
           git commit -m "Sync from source repository"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/MegaRoast/MegaRoast_discovery.git main --force
+          git push https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/MegaRoast/MegaRoast_discovery.git main --force
         
