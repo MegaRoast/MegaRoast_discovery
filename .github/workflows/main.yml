@@ -1,0 +1,35 @@
+name: Sync from Source Repository
+on:
+  # schedule:
+    # - cron: '0 0 * * *'  # Runs every night at midnight (UTC)
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Clone source repository
+        env:
+          SOURCE_REPO_PAT: ${{ secrets.SOURCE_REPO_PAT }}
+        run: |
+          git clone --depth=1 https://x-access-token:${{ secrets.SOURCE_REPO_PAT }}@github.com/mediumroast/mediumroast_discovery.git source-repo
+          rsync -a --delete --exclude '.git' source-repo/ ./
+          rm -rf source-repo
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Sync from source repository"
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
