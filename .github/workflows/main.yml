@@ -22,16 +22,16 @@ jobs:
         env:
           SOURCE_REPO_PAT: ${{ secrets.SOURCE_REPO_PAT }}
         run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git source-repo
+          git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git /tmp/source-repo
 
       - name: Copy files from source to target
         run: |
-          rsync -a --delete --exclude '.git' --exclude '.github' --ignore-missing-args source-repo/ ./
+          rsync -a --delete --exclude '.git' --exclude '.github' --ignore-missing-args /tmp/source-repo/ ./
       
       - name: Commit and push changes
         run: |
           git add .
-          rm -rf source-repo
+          rm -rf /tmp/source-repo
           git commit -m "Sync from source repository"
           git push origin main --force
         env:
