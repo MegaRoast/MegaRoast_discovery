@@ -23,8 +23,12 @@ jobs:
           SOURCE_REPO_PAT: ${{ secrets.SOURCE_REPO_PAT }}
         run: |
           git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git source-repo
-          rsync -a --delete --exclude '.git' source-repo/ ./
 
+      - name: Copy files from source to target
+        run: |
+          cp -r source-repo/* ./
+          cp -r source-repo/.[!.]* ./
+      
       - name: Commit and push changes
         run: |
           git add .
