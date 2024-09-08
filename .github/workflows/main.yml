@@ -24,11 +24,11 @@ jobs:
         run: |
           git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git source-repo
           rsync -a --delete --exclude '.git' source-repo/ ./
-          rm -rf source-repo
 
       - name: Commit and push changes
         run: |
           git add .
+          rm -rf source-repo
           git commit -m "Sync from source repository"
           git push origin main --force
         env:
