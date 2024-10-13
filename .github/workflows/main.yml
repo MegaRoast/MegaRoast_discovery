@@ -1,0 +1,39 @@
+name: Sync from Source Repository
+on:
+  # schedule:
+    # - cron: '0 0 * * *'  # Runs every night at midnight (UTC)
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'miha42-github'
+          git config --global user.email 'mihay42@gmail.com'
+
+      - name: Clone source repository
+        env:
+          SOURCE_REPO_PAT: ${{ secrets.SOURCE_REPO_PAT }}
+        run: |
+          git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git /tmp/source-repo
+
+      - name: Copy files from source to target
+        run: |
+          rsync -a --delete --exclude '.git' --exclude '.github' --ignore-missing-args /tmp/source-repo/ ./
+      
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add .
+          rm -rf /tmp/source-repo
+          git commit -m "Sync from source repository"
+          git push https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/MegaRoast/MegaRoast_discovery.git main --force
+        
