@@ -3,6 +3,7 @@ import axios from 'axios';
 import CompaniesReport from './components/CompaniesReport';
 import CompanyReports from './components/CompanyReports';
 import MainReport from './components/MainReport';
+import GitHubAuth from './components/Authorization'; // Import the GitHubAuth component
 
 const App = () => {
   const [inputs, setInputs] = useState({
@@ -11,46 +12,64 @@ const App = () => {
     branches: [],
     workflows: []
   });
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [accessToken, setAccessToken] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
-      const companies = await readObjects('/Companies/Companies.json');
-      const interactions = await readObjects('/Interactions/Interactions.json');
-      const branches = await readBranches();
-      const workflows = await readWorkflows();
+    if (isAuthenticated && accessToken) {
+      const fetchData = async () => {
+        const companies = await readObjects('/Companies/Companies.json', accessToken);
+        const interactions = await readObjects('/Interactions/Interactions.json', accessToken);
+        const branches = await readBranches(accessToken);
+        const workflows = await readWorkflows(accessToken);
 
-      setInputs({ companies, interactions, branches, workflows });
-    };
+        setInputs({
+          companies,
+          interactions,
+          branches,
+          workflows
+        });
+      };
 
-    fetchData();
-  }, []);
+      fetchData();
+    }
+  }, [isAuthenticated, accessToken]);
 
-  if (inputs.companies.length === 0) {
-    return <div>No companies found</div>;
-  }
+  const readObjects = async (url, token) => {
+    const response = await axios.get(url, {
+      headers: {
+        Authorization: `token ${token}`
+      }
+    });
+    return response.data;
+  };
+
+  const readBranches = async (token) => {
+    // Implement the function to read branches using the token
+  };
+
+  const readWorkflows = async (token) => {
+    // Implement the function to read workflows using the token
+  };
 
   return (
     <div>
-      <CompaniesReport companies={inputs.companies} />
-      <CompanyReports companies={inputs.companies} />
-      <MainReport />
+      {!isAuthenticated ? (
+        <GitHubAuth
+          onAuthSuccess={(token) => {
+            setAccessToken(token);
+            setIsAuthenticated(true);
+          }}
+        />
+      ) : (
+        <>
+          <CompaniesReport data={inputs.companies} />
+          <CompanyReports data={inputs.interactions} />
+          <MainReport data={inputs.branches} workflows={inputs.workflows} />
+        </>
+      )}
     </div>
   );
-};
-
-const readObjects = async (path) => {
-  const response = await axios.get(path);
-  return response.data;
-};
-
-const readBranches = async () => {
-  const response = await axios.get('/api/branches');
-  return response.data;
-};
-
-const readWorkflows = async () => {
-  const response = await axios.get('/api/workflows');
-  return response.data;
 };
 
 export default App;
