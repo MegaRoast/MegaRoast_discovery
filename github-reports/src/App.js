@@ -1,74 +1,74 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import CompaniesReport from './components/CompaniesReport';
-import CompanyReports from './components/CompanyReports';
-import MainReport from './components/MainReport';
-import GitHubAuth from './components/Authorization'; // Import the GitHubAuth component
+import React, { useState, useEffect } from 'react';
+import { ThemeProvider, BaseStyles, Box, Header, Text, IconButton } from '@primer/react';
+import { TriangleDownIcon, SunIcon, MoonIcon, SignOutIcon } from '@primer/octicons-react';
+import mrLogo from './images/mr_logo_192H.png'; // Import your custom logo
+import Studies from './components/Studies'; // Import the Studies component
+import Interactions from './components/Interactions'; // Import the Interactions component
+import Companies from './components/Companies'; // Import the Companies component
+
+const menuItems = [
+  { name: 'Companies', href: '#companies' },
+  { name: 'Interactions', href: '#interactions' },
+  { name: 'Studies', href: '#studies' },
+  { name: 'Status', href: '#' },
+];
+
+const buttonItems = [
+  { icon: SignOutIcon, label: 'Logout', hasTriangle: false },
+];
 
 const App = () => {
-  const [inputs, setInputs] = useState({
-    companies: [],
-    interactions: [],
-    branches: [],
-    workflows: []
-  });
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [accessToken, setAccessToken] = useState('');
+  const [theme, setTheme] = useState('light');
+  const [selectedMenu, setSelectedMenu] = useState('companies');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
 
   useEffect(() => {
-    if (isAuthenticated && accessToken) {
-      const fetchData = async () => {
-        const companies = await readObjects('/Companies/Companies.json', accessToken);
-        const interactions = await readObjects('/Interactions/Interactions.json', accessToken);
-        const branches = await readBranches(accessToken);
-        const workflows = await readWorkflows(accessToken);
-
-        setInputs({
-          companies,
-          interactions,
-          branches,
-          workflows
-        });
-      };
-
-      fetchData();
-    }
-  }, [isAuthenticated, accessToken]);
-
-  const readObjects = async (url, token) => {
-    const response = await axios.get(url, {
-      headers: {
-        Authorization: `token ${token}`
-      }
-    });
-    return response.data;
-  };
-
-  const readBranches = async (token) => {
-    // Implement the function to read branches using the token
-  };
-
-  const readWorkflows = async (token) => {
-    // Implement the function to read workflows using the token
-  };
+    document.body.style.backgroundColor = theme === 'light' ? '#f6f8f9' : '#0d1117';
+    document.body.style.color = theme === 'light' ? '#1f2328' : '#c9d1d9';
+  }, [theme]);
 
   return (
-    <div>
-      {!isAuthenticated ? (
-        <GitHubAuth
-          onAuthSuccess={(token) => {
-            setAccessToken(token);
-            setIsAuthenticated(true);
-          }}
-        />
-      ) : (
-        <>
-          <CompaniesReport data={inputs.companies} />
-          <CompanyReports data={inputs.interactions} />
-          <MainReport data={inputs.branches} workflows={inputs.workflows} />
-        </>
-      )}
-    </div>
+    <ThemeProvider colorMode={theme}>
+      <BaseStyles>
+        <Header style={{ backgroundColor: theme === 'light' ? '#f6f8f9' : '#0d1117', color: theme === 'light' ? '#1f2328' : '#c9d1d9' }}>
+          <Header.Item full>
+            <Header.Link href="#" fontSize={2} display="flex" alignItems="center" style={{ color: theme === 'light' ? '#1f2328' : '#c9d1d9' }}>
+              <img src={mrLogo} alt="Logo" style={{ height: 32, marginRight: 8 }} />
+              <Text fontSize={2} fontWeight="bold">Mediumroast for GitHub</Text>
+            </Header.Link>
+          </Header.Item>
+          {menuItems.map((item, index) => (
+            <Header.Item key={index}>
+              <Header.Link href={item.href} onClick={() => setSelectedMenu(item.name.toLowerCase())} style={{ color: theme === 'light' ? '#1f2328' : '#c9d1d9' }}>
+                {item.name}
+              </Header.Link>
+            </Header.Item>
+          ))}
+          <Header.Item>
+            <IconButton
+              icon={theme === 'light' ? MoonIcon : SunIcon}
+              aria-label="Toggle theme"
+              onClick={toggleTheme}
+            />
+          </Header.Item>
+          {buttonItems.map((item, index) => (
+            <Header.Item key={index}>
+              <IconButton icon={item.icon} aria-label={item.label} />
+              {item.hasTriangle && <TriangleDownIcon size={16} />}
+            </Header.Item>
+          ))}
+        </Header>
+        <Box p={4}>
+          {selectedMenu === 'companies' && <Companies theme={theme} />}
+          {selectedMenu === 'interactions' && <Interactions theme={theme} />}
+          {selectedMenu === 'studies' && <Studies theme={theme} />}
+          {/* Add other components for different menu items here */}
+        </Box>
+      </BaseStyles>
+    </ThemeProvider>
   );
 };
 

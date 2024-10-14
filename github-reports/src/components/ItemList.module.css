@@ -1,0 +1,135 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure children are spaced to place actionsContainer at the bottom */
+  height: 75vh; /* Set height to 75% of the visible area */
+  max-height: 75vh; /* Set maximum height to 75% of the visible area */
+  max-width: 95vw; /* Maintain the increased width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0; /* Remove internal padding */
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.light {
+  background-color: #f6f8f9;
+  color: #1f2328;
+}
+
+.dark {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 8px 16px;
+  border-bottom: 1px solid #e1e4e8; /* Add a line across the entire component */
+  background-color: var(--header-bg-color); /* Use a CSS variable for the background color */
+}
+
+.light .headerContainer {
+  --header-bg-color: #e1e4e8; /* Light theme background color */
+}
+
+.dark .headerContainer {
+  --header-bg-color: #1f2328; /* Dark theme background color */
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between; /* Place items at opposite ends */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Make the div as wide as the surrounding container */
+}
+
+.headerText {
+  font-size: 14px !important; /* Reduce the font size */
+  font-weight: bold;
+  margin: 0; /* Remove all margins */
+}
+
+.viewButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
+}
+
+.viewText {
+  margin-right: 8px;
+  font-size: 11px !important; /* Restore the font size */
+  font-weight: bold;
+}
+
+.button {
+  font-size: 10px !important; /* Reduce the font size */
+  padding: 2px 8px !important; /* Adjust the padding */
+  min-width: 60px !important; /* Set a minimum width */
+  max-height: 20px; /* Ensure the height adjusts based on padding */
+}
+
+.activeButton {
+  background-color: #2ea44f !important;
+  color: white !important;
+}
+
+.items {
+  flex-grow: 1;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: inherit;
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.noItems {
+  font-size: 14px; /* Reduce the font size */
+  color: inherit;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: flex-end; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 8px 16px;
+  border-top: 1px solid #e1e4e8; /* Add a line across the entire component */
+  background-color: var(--header-bg-color); /* Use a CSS variable for the background color */
+  width: 100%; /* Make the container span 100% of the parent width */
+  flex-shrink: 0; /* Prevent the container from shrinking */
+}
+
+.light .actionsContainer {
+  --header-bg-color: #e1e4e8; /* Light theme background color */
+}
+
+.dark .actionsContainer {
+  --header-bg-color: #1f2328; /* Dark theme background color */
+}
+
+.newItemButton {
+  font-size: 10px !important; /* Reduce the font size */
+  padding: 2px 8px !important; /* Adjust the padding */
+  min-width: 60px !important; /* Set a minimum width */
+  max-height: 22px; /* Ensure the height adjusts based on padding */
+}
+
+.newItemButtonDisabled {
+  background-color: var(--disabled-bg-color); /* Use a CSS variable for the disabled background color */
+  color: var(--disabled-text-color); /* Use a CSS variable for the disabled text color */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.light .newItemButtonDisabled {
+  --disabled-bg-color: #e1e4e8; /* Light theme disabled background color */
+  --disabled-text-color: #a1a1a1; /* Light theme disabled text color */
+}
+
+.dark .newItemButtonDisabled {
+  --disabled-bg-color: #30363d; /* Dark theme disabled background color */
+  --disabled-text-color: #6e7681; /* Dark theme disabled text color */
+}
