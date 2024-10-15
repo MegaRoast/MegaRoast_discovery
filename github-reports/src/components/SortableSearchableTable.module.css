@@ -1,0 +1,103 @@
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.innerContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items at the start of the container */
+  height: 100%;
+  border: 1px solid #e1e4e8; /* Add a border around the container */
+}
+
+.searchContainer {
+  margin-left: 14px; /* Add margins around the search box */
+  margin-top: 10px; /* Add top margin to separate from the header */
+  padding-left: 5px; /* Add padding to the left of the search box */
+  display: flex;
+  align-items: center;
+  position: relative; /* Position relative for the search icon */
+}
+
+.searchInput {
+  font-size: 10px; /* Set font size */
+  width: 250px; /* Make the search box longer */
+  padding-left: 11px !important; /* Add padding to make space for the search icon */
+}
+
+.filterIcon {
+    position: absolute;
+    left: 10px; /* Adjust the position of the search icon */
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 10px;
+    color: #888;
+  }
+
+.tableContainer {
+  flex: 1;
+  margin: 20px; /* Add margins around the table */
+  overflow: auto; /* Make the table scrollable if content exceeds viewable area */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Shrink the font size */
+  border-radius: 4px; /* Round the corners of the table */
+  overflow: hidden; /* Ensure the rounded corners are visible */
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  position: relative; /* Position relative for sorting indicators */
+}
+
+.table th .sort-indicator {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+/* Optional: Round the corners of the table headers and cells */
+.table th:first-child {
+  border-top-left-radius: 4px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 4px;
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+
+/* Dark theme styles */
+.dark .table th {
+  background-color: #1f2328; /* Dark mode header background color */
+}
+
+.dark .table tr:nth-child(even) {
+  background-color: #252c35; /* Dark mode alternating row background color */
+}

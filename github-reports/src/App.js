@@ -20,6 +20,22 @@ const buttonItems = [
 const App = () => {
   const [theme, setTheme] = useState('light');
   const [selectedMenu, setSelectedMenu] = useState('companies');
+  const [interactions, setInteractions] = useState([]);
+  const [companies, setCompanies] = useState([]);
+
+  useEffect(() => {
+    // Fetch interactions data
+    fetch('/MegaRoast_discovery/data/interactions.json')
+      .then((response) => response.json())
+      .then((data) => setInteractions(data))
+      .catch((error) => console.error('Error fetching interactions:', error));
+
+    // Fetch companies data
+    fetch('/MegaRoast_discovery/data/companies.json')
+      .then((response) => response.json())
+      .then((data) => setCompanies(data))
+      .catch((error) => console.error('Error fetching companies:', error));
+  }, []);
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -62,8 +78,8 @@ const App = () => {
           ))}
         </Header>
         <Box p={4}>
-          {selectedMenu === 'companies' && <Companies theme={theme} />}
-          {selectedMenu === 'interactions' && <Interactions theme={theme} />}
+          {selectedMenu === 'companies' && <Companies theme={theme} objs={companies} />}
+          {selectedMenu === 'interactions' && <Interactions theme={theme} objs={interactions} />}
           {selectedMenu === 'studies' && <Studies theme={theme} />}
           {/* Add other components for different menu items here */}
         </Box>

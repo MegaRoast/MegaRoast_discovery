@@ -13,6 +13,13 @@
   overflow: hidden; /* Prevent overflow */
 }
 
+.tableContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start of the container */
+  }
+
 .light {
   background-color: #f6f8f9;
   color: #1f2328;
@@ -88,9 +95,13 @@
 }
 
 .noItems {
-  font-size: 14px; /* Reduce the font size */
-  color: inherit;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5em; /* Increase the font size */
+    text-align: center;
+  }
 
 .actionsContainer {
   display: flex;

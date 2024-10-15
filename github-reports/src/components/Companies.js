@@ -3,7 +3,7 @@ import { Box, Text, TabNav } from '@primer/react';
 import styles from './Objects.module.css'; // Import the CSS module
 import ItemList from './ItemList'; // Import the ItemList component
 
-const Companies = ({ theme }) => {
+const Companies = ({ theme, objs }) => {
   const [selectedTab, setSelectedTab] = useState('insights');
 
   useEffect(() => {
@@ -48,7 +48,13 @@ const Companies = ({ theme }) => {
           </Text>
         )}
         {selectedTab === 'items' && (
-          <ItemList theme={theme} itemName="Companies" buttonName="New company" isButtonDisabled={true} />
+          <ItemList theme={theme} itemName="Companies" buttonName="New company" isButtonDisabled={true} objs={objs} columns={[
+            {key: 'name', name: 'Name'}, 
+            {key: 'region', name: 'Geographic Region'}, 
+            {key: 'company_type', name: 'Company Type'},
+            {key: 'major_group_description', name: 'Industry Major Group'},
+            {key: 'role', name: 'Role'},
+          ]}/>
         )}
       </Box>
     </Box>
