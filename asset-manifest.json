@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MegaRoast_discovery/static/css/main.2077363d.css",
-    "main.js": "/MegaRoast_discovery/static/js/main.73b7be35.js",
+    "main.css": "/MegaRoast_discovery/static/css/main.16a5e84d.css",
+    "main.js": "/MegaRoast_discovery/static/js/main.e89f4d52.js",
     "static/js/453.ac42cc9a.chunk.js": "/MegaRoast_discovery/static/js/453.ac42cc9a.chunk.js",
     "static/media/mr_logo_192H.png": "/MegaRoast_discovery/static/media/mr_logo_192H.c013fab87302ec4d67db.png",
     "index.html": "/MegaRoast_discovery/index.html",
-    "main.2077363d.css.map": "/MegaRoast_discovery/static/css/main.2077363d.css.map",
-    "main.73b7be35.js.map": "/MegaRoast_discovery/static/js/main.73b7be35.js.map",
+    "main.16a5e84d.css.map": "/MegaRoast_discovery/static/css/main.16a5e84d.css.map",
+    "main.e89f4d52.js.map": "/MegaRoast_discovery/static/js/main.e89f4d52.js.map",
     "453.ac42cc9a.chunk.js.map": "/MegaRoast_discovery/static/js/453.ac42cc9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2077363d.css",
-    "static/js/main.73b7be35.js"
+    "static/css/main.16a5e84d.css",
+    "static/js/main.e89f4d52.js"
   ]
 }
