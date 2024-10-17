@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Box, TextInput, Text } from '@primer/react';
-import { FilterIcon } from '@primer/octicons-react'; // Import the search icon
+import { FilterIcon } from '@primer/octicons-react'; // Import the filter icon
 import styles from './SortableSearchableTable.module.css'; // Import the CSS module
 
 const SortableSearchableTable = ({ columns, data, theme }) => { // Accept the theme prop
@@ -23,11 +23,22 @@ const SortableSearchableTable = ({ columns, data, theme }) => { // Accept the th
   };
 
   const filteredItems = useMemo(() => {
-    return data.filter(item =>
-      columns.some(column =>
-        item[column.key] !== undefined && item[column.key] !== null && item[column.key].toString().toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    );
+    const filtered = data.filter(item => {
+      return columns.some(column => {
+        const value = item[column.key];
+        if (value === undefined || value === null) {
+          return false;
+        }
+        if (typeof value === 'string') {
+          return value.toLowerCase().includes(searchQuery.toLowerCase());
+        }
+        if (typeof value === 'number') {
+          return value.toString().includes(searchQuery);
+        }
+        return false;
+      });
+    });
+    return filtered;
   }, [data, columns, searchQuery]);
 
   const sortedItems = useMemo(() => {
@@ -52,7 +63,7 @@ const SortableSearchableTable = ({ columns, data, theme }) => { // Accept the th
         <Box className={styles.searchContainer}>
           <FilterIcon className={styles.filterIcon} />
           <TextInput
-            placeholder="Search..."
+            placeholder="Filter..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className={styles.searchInput}
@@ -63,8 +74,9 @@ const SortableSearchableTable = ({ columns, data, theme }) => { // Accept the th
             <Text>No items supplied</Text>
           </Box>
         ) : (
-          <Box className={styles.tableContainer}>
-            <table className={styles.table}>
+          <Box className={theme === 'dark' ? styles.darkTableContainer : styles.tableContainer}>
+            <div className={theme === 'dark' ? styles.darkHeaderCover : styles.headerCover}></div> {/* Add the small container above the header */}
+            <table className={theme === 'dark' ? styles.darkTable : styles.table}>
               <thead>
                 <tr>
                   {columns.map((column) => (

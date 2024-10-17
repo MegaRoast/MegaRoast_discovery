@@ -53,11 +53,12 @@ const Interactions = ({ theme, objs }) => {
             itemName="Interactions" 
             buttonName="New interaction" 
             isButtonDisabled={true}  
-            objs={[objs]}
+            objs={objs}
             columns={[
               {key: 'name', name: 'Name'}, 
               {key: 'reading_time', name: 'Reading Time (min)'}, 
               {key: 'interaction_type', name: 'Type'},
+              {key: 'creation_date', name: 'Creation date'}, 
             ]}
           />
         )}

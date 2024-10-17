@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Box, Text, Button } from '@primer/react';
 import styles from './ItemList.module.css'; // Import the CSS module
-import SortableSearchableTable from './SortableSearchableTable'; // Import the new component
+import SortableSearchableTable from './SortableSearchableTable'; // Import the existing component
+import InteractionIconView from './InteractionIconView'; // Import the new component
 
 const ItemList = ({ theme, itemName, buttonName, columns = [], isButtonDisabled = false, objs }) => {
   const [view, setView] = useState('list');
@@ -35,6 +36,9 @@ const ItemList = ({ theme, itemName, buttonName, columns = [], isButtonDisabled 
       <Box className={styles.tableContainer}>
         {view === 'list' && (
           <SortableSearchableTable columns={columns} data={objs} theme={theme} />
+        )}
+        {view === 'icon' && (
+          <InteractionIconView interactions={objs} />
         )}
       </Box>
       <Box className={styles.actionsContainer}>

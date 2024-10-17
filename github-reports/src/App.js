@@ -5,6 +5,7 @@ import mrLogo from './images/mr_logo_192H.png'; // Import your custom logo
 import Studies from './components/Studies'; // Import the Studies component
 import Interactions from './components/Interactions'; // Import the Interactions component
 import Companies from './components/Companies'; // Import the Companies component
+import './App.css'; // Import the CSS file
 
 const menuItems = [
   { name: 'Companies', href: '#companies' },
@@ -58,7 +59,12 @@ const App = () => {
           </Header.Item>
           {menuItems.map((item, index) => (
             <Header.Item key={index}>
-              <Header.Link href={item.href} onClick={() => setSelectedMenu(item.name.toLowerCase())} style={{ color: theme === 'light' ? '#1f2328' : '#c9d1d9' }}>
+              <Header.Link
+                href={item.href}
+                onClick={() => setSelectedMenu(item.name.toLowerCase())}
+                className={`menuItem ${selectedMenu === item.name.toLowerCase() ? 'active' : ''}`}
+                style={{ color: theme === 'light' ? '#1f2328' : '#c9d1d9' }}
+              >
                 {item.name}
               </Header.Link>
             </Header.Item>

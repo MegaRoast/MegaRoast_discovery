@@ -1,0 +1,84 @@
+.iconViewContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax value as needed */
+  gap: 16px;
+  padding: 16px; /* Add consistent padding around the container */
+  max-height: calc(100vh - 300px); /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px; /* Add padding around each icon item */
+  position: relative; /* For positioning the tooltip */
+  z-index: 1; /* Default z-index */
+}
+
+.iconItem:hover {
+  z-index: 10; /* Bring the hovered item to the front */
+}
+
+.iconItem:hover .iconWrapper svg,
+.iconItem:hover .miniIconWrapper svg,
+.iconItem:hover .iconText {
+  color: #0366d6; /* GitHub blue */
+  fill: #0366d6; /* GitHub blue for SVG icons */
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px; /* Add padding around the file icon */
+}
+
+.miniIconWrapper {
+  position: absolute;
+  top: 52%; /* Slightly adjusted position towards the bottom */
+  left: 48%; /* Slightly adjusted position towards the left */
+  transform: translate(-50%, -50%);
+  background-color: var(--color-bg-default);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.iconText {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--color-fg-default);
+}
+
+.tooltipItem {
+  margin-bottom: 8px;
+}
+
+.tooltipItem:last-child {
+  margin-bottom: 0;
+}
+
+.tooltipIcon {
+  margin-right: 8px;
+}
+
+.tooltipHeading {
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-align: left; /* Left justify heading */
+  width: 100%; /* Ensure heading takes full width */
+}
+
+.tooltipContent {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure content takes full width */
+}
+
+.tooltipText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

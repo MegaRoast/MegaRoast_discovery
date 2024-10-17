@@ -29,38 +29,45 @@
 }
 
 .filterIcon {
-    position: absolute;
-    left: 10px; /* Adjust the position of the search icon */
-    top: 50%;
-    transform: translateY(-50%); /* Center the icon vertically */
-    font-size: 10px;
-    color: #888;
-  }
+  position: absolute;
+  left: 10px; /* Adjust the position of the search icon */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 10px;
+  color: #888;
+}
 
 .tableContainer {
   flex: 1;
   margin: 20px; /* Add margins around the table */
-  overflow: auto; /* Make the table scrollable if content exceeds viewable area */
+  max-height: 55vh; /* Set a maximum height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* Ensure the header remains sticky */
+  border-radius: 4px; /* Round the corners of the table */
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
   font-size: 12px; /* Shrink the font size */
-  border-radius: 4px; /* Round the corners of the table */
-  overflow: hidden; /* Ensure the rounded corners are visible */
 }
 
 .table th,
 .table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  padding: 8px; /* Ensure consistent padding */
+  text-align: left; /* Ensure consistent text alignment */
 }
 
 .table th {
+  position: sticky;
+  top: 0;
   background-color: #f2f2f2;
   cursor: pointer;
-  position: relative; /* Position relative for sorting indicators */
+  border: 1px solid #ddd;
+  z-index: 2; /* Ensure the header is above the table body */
+  height: 25px; /* Make the header taller */
+  line-height: 25px; /* Center the text vertically */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1); /* Add a shadow to the header to cover the thin line */
 }
 
 .table th .sort-indicator {
@@ -68,36 +75,90 @@
   font-size: 0.8em;
 }
 
+.table td {
+  border: 1px solid #ddd;
+}
+
 .table tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+.tableBodyContainer {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 50vh; /* Set a maximum height for the table body */
 }
 
 .table tr:hover {
   background-color: #ddd;
 }
 
-/* Optional: Round the corners of the table headers and cells */
-.table th:first-child {
-  border-top-left-radius: 4px;
-}
-
-.table th:last-child {
-  border-top-right-radius: 4px;
-}
-
-.table tr:last-child td:first-child {
-  border-bottom-left-radius: 4px;
-}
-
-.table tr:last-child td:last-child {
-  border-bottom-right-radius: 4px;
+/* Small container to cover the thin line above the header */
+.headerCover {
+  position: sticky;
+  top: 0;
+  height: 2px; /* Small height to cover the line */
+  background-color: #f2f2f2; /* Same color as the header background */
+  z-index: 3; /* Ensure it is above the header */
 }
 
 /* Dark theme styles */
-.dark .table th {
-  background-color: #1f2328; /* Dark mode header background color */
+.darkTableContainer {
+  flex: 1;
+  margin: 20px; /* Add margins around the table */
+  max-height: 55vh; /* Set a maximum height for the table */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* Ensure the header remains sticky */
+  border-radius: 4px; /* Round the corners of the table */
 }
 
-.dark .table tr:nth-child(even) {
-  background-color: #252c35; /* Dark mode alternating row background color */
+.darkTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px; /* Shrink the font size */
+  background-color: #0d1117; /* Dark mode table background color */
+  color: #c9d1d9; /* Dark mode table text color */
+}
+
+.darkTable th,
+.darkTable td {
+  padding: 8px; /* Ensure consistent padding */
+  text-align: left; /* Ensure consistent text alignment */
+}
+
+.darkTable th {
+  position: sticky;
+  top: 0;
+  background-color: #161b22; /* Dark mode header background color */
+  cursor: pointer;
+  border: 1px solid #444; /* Dark mode header border color */
+  z-index: 2; /* Ensure the header is above the table body */
+  height: 25px; /* Make the header taller */
+  line-height: 25px; /* Center the text vertically */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.5); /* Add a shadow to the header to cover the thin line */
+}
+
+.darkTable th .sort-indicator {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+.darkTable td {
+  border: 1px solid #444; /* Dark mode cell border color */
+}
+
+.darkTable tr:nth-child(even) {
+  background-color: #1f2328; /* Dark mode alternating row background color */
+}
+
+.darkTable tr:hover {
+  background-color: #252c35; /* Dark mode hover color */
+}
+
+/* Dark theme small container to cover the thin line above the header */
+.darkHeaderCover {
+  position: sticky;
+  top: 0;
+  height: 2px; /* Small height to cover the line */
+  background-color: #161b22; /* Same color as the dark mode header background */
+  z-index: 3; /* Ensure it is above the header */
 }
