@@ -1,0 +1,67 @@
+.iconViewContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.iconItem:hover {
+  z-index: 10;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.companyLogo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.iconText {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: var(--color-fg-default);
+}
+
+.tooltipItem {
+  margin-bottom: 8px;
+}
+
+.tooltipIcon {
+  margin-right: 8px;
+}
+
+.tooltipItem:last-child {
+  margin-bottom: 0;
+}
+
+.tooltipHeading {
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-align: left; /* Left justify heading */
+  width: 100%; /* Ensure heading takes full width */
+}
+
+.tooltipContent {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure content takes full width */
+}
