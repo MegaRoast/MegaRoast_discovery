@@ -13,7 +13,9 @@ import { useTheme } from '@mui/material/styles';
 
 const InteractionIconView = ({ interactions }) => {
   const [icons, setIcons] = useState({});
+  // eslint-disable-next-line no-unused-vars
   const [showTooltip, setShowTooltip] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [tooltipContent, setTooltipContent] = useState({});
   const target = useRef(null);
   const theme = useTheme();

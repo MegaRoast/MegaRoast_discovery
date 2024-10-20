@@ -7,8 +7,9 @@ import { PiBuilding, PiCertificate } from 'react-icons/pi';
 import { HiOutlineMap } from 'react-icons/hi2';
 
 const CompanyIconView = ({ companies }) => {
-
+  // eslint-disable-next-line no-unused-vars
   const [showTooltip, setShowTooltip] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [tooltipContent, setTooltipContent] = useState({});
   const target = useRef(null);
   const theme = useTheme();

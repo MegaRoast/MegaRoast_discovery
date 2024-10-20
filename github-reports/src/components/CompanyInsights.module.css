@@ -1,0 +1,27 @@
+/* src/components/CompanyInsights.module.css */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: one for the map and one for the bar charts */
+  grid-template-rows: auto auto; /* Two rows: one for the stats an
+  height: 75vh; /* Adjust this value as needed */
+  overflow-y: auto;
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-between;
+  grid-column: span 2; /* Span both columns */
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  grid-column: span 2; /* Span both columns */
+  margin-top: 4px;
+}

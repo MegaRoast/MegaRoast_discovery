@@ -84,7 +84,7 @@ const App = () => {
           ))}
         </Header>
         <Box p={4}>
-          {selectedMenu === 'companies' && <Companies theme={theme} objs={companies} />}
+          {selectedMenu === 'companies' && <Companies theme={theme} objs={companies} secondaryObjs={interactions}/>}
           {selectedMenu === 'interactions' && <Interactions theme={theme} objs={interactions} />}
           {selectedMenu === 'studies' && <Studies theme={theme} />}
           {/* Add other components for different menu items here */}
