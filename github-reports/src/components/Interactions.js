@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Text, TabNav } from '@primer/react';
+import { Box, TabNav } from '@primer/react';
 import styles from './Objects.module.css'; // Import the CSS module
 import ItemList from './ItemList'; // Import the ItemList component
+import InteractionInsights from './InteractionInsights';
 
-const Interactions = ({ theme, objs }) => {
+const Interactions = ({ theme, companies, interactions }) => {
   const [selectedTab, setSelectedTab] = useState('insights');
 
   useEffect(() => {
@@ -43,9 +44,7 @@ const Interactions = ({ theme, objs }) => {
       </TabNav>
       <Box p={3}>
         {selectedTab === 'insights' && (
-          <Text as="p" className={styles.insights}>
-            Coming soon
-          </Text>
+          <InteractionInsights companies={companies} interactions={interactions} />
         )}
         {selectedTab === 'items' && (
           <ItemList 
@@ -53,7 +52,7 @@ const Interactions = ({ theme, objs }) => {
             itemName="Interactions" 
             buttonName="New interaction" 
             isButtonDisabled={true}  
-            objs={objs}
+            objs={interactions}
             columns={[
               {key: 'name', name: 'Name'}, 
               {key: 'reading_time', name: 'Reading Time (min)'}, 

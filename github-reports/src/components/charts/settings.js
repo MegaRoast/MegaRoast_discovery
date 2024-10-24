@@ -11,7 +11,7 @@ const chartSettings = {
         }
     },
     itemColor: '#90cbcb',
-    itemBorderColor: '#A1A0A2',
+    itemBorderColor: '#2b3a39',
     labelColor: '#221c18',
     itemAccentColor: '#b3815b',
     tooltip: {

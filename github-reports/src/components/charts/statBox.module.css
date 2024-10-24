@@ -22,10 +22,10 @@
   justify-content: center;
   background-color: white;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  font-size: 2em; /* Make the text bigger */
+  font-size: 1.5em; /* Make the text bigger */
   font-weight: bold; /* Make the text bold */
 }
 
@@ -36,10 +36,10 @@
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   text-align: center; /* Center text */
-  font-size: 0.9em; /* Make the text smaller */
+  font-size: 0.75em; /* Make the text smaller */
 }
 
 .icon {
-  transform: scale(1); /* Make the icon bigger */
+  transform: scale(0.7); /* Make the icon bigger */
   margin-right: 5px; /* Add some space between the icon and the number */
 }

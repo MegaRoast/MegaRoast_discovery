@@ -44,18 +44,19 @@ const PieChart = ({ items, itemKey, itemType, title }) => {
             show: true,
             width: 100,
             feature: {
-                saveAsImage: {show: true},
+                saveAsImage: {
+                    show: true,
+                    title: 'Save as Image'
+                },
             },
-            right: '5%'
+            left: 'auto',
         },
         series: [
             {
                 name: itemType,
                 type: 'pie',
                 radius: '80%',
-                center: ['52%', '45%'],
                 data: data.seriesData.sort(function (a, b) { return a.value - b.value; }),
-                roseType: 'radius',
                 label: {
                     color: chartSettings.labelColor
                 },
@@ -69,7 +70,8 @@ const PieChart = ({ items, itemKey, itemType, title }) => {
                 },
                 itemStyle: {
                     color: chartSettings.itemColor,
-                    
+                    borderWidth: 0.2,
+                    borderColor: chartSettings.itemBorderColor
                 },
                 animationType: 'scale',
                 animationEasing: 'elasticOut',

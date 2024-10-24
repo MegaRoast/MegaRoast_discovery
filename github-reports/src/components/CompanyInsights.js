@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import BarChart from './charts/bar'; // Import the BarChart component
 import PieChart from './charts/pie'; // Import the PieChart component
 import StatBox from './charts/statBox'; // Import the StatBox component
-import styles from './CompanyInsights.module.css'; // Import the CSS module
+import styles from './Insights.module.css'; // Import the CSS module
 import InsightsMap from './charts/map';
 
 const mutateData = (data) => {
@@ -60,7 +60,7 @@ const CompanyInsights = ({ companies, theme, interactions }) => {
   const totalInteractions = companies.reduce((acc, company) => acc + (company.linked_interactions ? Object.keys(company.linked_interactions).length : 0), 0);
   const avgInteractionsPerCompany = Math.ceil(totalInteractions / totalCompanies);
   const avgIcon = avgInteractionsPerCompany >= 10 ? CheckCircleFillIcon : XCircleFillIcon;
-  const avgTooltipText = avgInteractionsPerCompany >= 10 ? `The average number of interactions per company. The recommended minimum is 10, and the present value is ${avgInteractionsPerCompany}.` : `The average number of interactions per company is below the recommended minimum of 10 at ${avgInteractionsPerCompany}. Please consider adding about ${10 - avgInteractionsPerCompany} interactions to each company to improve analysis.`;
+  const avgTooltipText = avgInteractionsPerCompany >= 10 ? `The average number of interactions per company. The recommended minimum is 10, and the present value is ${avgInteractionsPerCompany}.` : `The average number of interactions per company is below the recommended minimum of 10. Please consider adding about ${10 - avgInteractionsPerCompany} interactions to each company to improve analysis.`;
 
   // Mutate the data to include the total number of interactions
   const newCompanies = mutateData(companies);
@@ -72,19 +72,19 @@ const CompanyInsights = ({ companies, theme, interactions }) => {
   let consistencyValue = 'Consistent';
   let consistencyColor = 'black';
   let consistencyTooltip = 'The interactions are consistent across companies.';
-  const consistencyTitle = 'Consistency of Interactions/Company';
+  const consistencyTitle = 'Consistency, Interactions/Company';
 
   // If the variance is greater than 0, the data is inconsistent, but if it is 0 then it is moderately consistent
   if (variance > 0) {
     consistencyIcon = XCircleFillIcon;
     consistencyValue = 'Inconsistent';
     consistencyColor = 'red';
-    consistencyTooltip = `The interactions are inconsistent across companies. The standard deviation is ${standardDeviation.toFixed(2)} and variance is ${variance.toFixed(2)}. Please add more interactions to each company to improve consistency.`;
+    consistencyTooltip = `The interactions are inconsistent across companies. Please add more interactions to each company to improve consistency.`;
   } else if (variance > 0 && variance < 1) {
     consistencyIcon = AlertFillIcon;
     consistencyValue = 'Mostly Consistent';
     consistencyColor = 'orange';
-    consistencyTooltip = `The interactions are moderately consistent across companies. The standard deviation is ${standardDeviation.toFixed(2)} and variance is ${variance.toFixed(2)}. Please add more interactions to each company to improve consistency.`;
+    consistencyTooltip = `The interactions are moderately consistent across companies. Please add more interactions to each company to improve consistency.`;
   }
 
   return (
@@ -105,7 +105,7 @@ const CompanyInsights = ({ companies, theme, interactions }) => {
         <StatBox
           icon={avgIcon}
           statistic={avgInteractionsPerCompany}
-          title="Avg Interactions/Company"
+          title="Avg., Interactions/Company"
           tooltipText={avgTooltipText}
           color={avgInteractionsPerCompany >= 10 ? 'black' : 'red'}
         />
@@ -133,6 +133,26 @@ const CompanyInsights = ({ companies, theme, interactions }) => {
           valueKey='total_interactions'
           yAxisName='Interactions'
           xAxisName='Companies'
+        />
+      </Box>
+      <Box className={styles.contentContainer}>
+        <PieChart 
+          items={newCompanies} 
+          itemKey='region' 
+          itemType='Companies' 
+          title='Company Regions (%)'
+        />
+        <PieChart 
+          items={newCompanies} 
+          itemKey='role' 
+          itemType='Companies' 
+          title='Company Roles (%)'
+        />
+        <PieChart 
+          items={newCompanies} 
+          itemKey='company_type' 
+          itemType='Companies' 
+          title='Company Types (%)'
         />
       </Box>
     </Box>
