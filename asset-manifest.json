@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MegaRoast_discovery/static/css/main.f3a1c89a.css",
+    "main.js": "/MegaRoast_discovery/static/js/main.800cb6c7.js",
+    "static/js/453.642de77f.chunk.js": "/MegaRoast_discovery/static/js/453.642de77f.chunk.js",
+    "static/media/coffee_icon.svg": "/MegaRoast_discovery/static/media/coffee_icon.082fdad65c948cb4d04bd325f74e4ddd.svg",
+    "static/media/mr_logo_192H.png": "/MegaRoast_discovery/static/media/mr_logo_192H.c013fab87302ec4d67db.png",
+    "index.html": "/MegaRoast_discovery/index.html",
+    "main.f3a1c89a.css.map": "/MegaRoast_discovery/static/css/main.f3a1c89a.css.map",
+    "main.800cb6c7.js.map": "/MegaRoast_discovery/static/js/main.800cb6c7.js.map",
+    "453.642de77f.chunk.js.map": "/MegaRoast_discovery/static/js/453.642de77f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3a1c89a.css",
+    "static/js/main.800cb6c7.js"
+  ]
+}
