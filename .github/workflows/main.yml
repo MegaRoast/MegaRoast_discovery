@@ -15,8 +15,8 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.name 'miha42-github'
-          git config --global user.email 'mihay42@gmail.com'
+          git config --global user.name 'mediumroast'
+          git config --global user.email 'michael.hay@mediumroast.io'
 
       - name: Clone source repository
         env:
