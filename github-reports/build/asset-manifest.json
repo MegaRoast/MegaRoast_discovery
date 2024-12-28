@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mediumroast_discovery/static/css/main.e6c13ad2.css",
+    "main.js": "/mediumroast_discovery/static/js/main.ab2fbba7.js",
+    "static/js/453.ac42cc9a.chunk.js": "/mediumroast_discovery/static/js/453.ac42cc9a.chunk.js",
+    "index.html": "/mediumroast_discovery/index.html",
+    "main.e6c13ad2.css.map": "/mediumroast_discovery/static/css/main.e6c13ad2.css.map",
+    "main.ab2fbba7.js.map": "/mediumroast_discovery/static/js/main.ab2fbba7.js.map",
+    "453.ac42cc9a.chunk.js.map": "/mediumroast_discovery/static/js/453.ac42cc9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ab2fbba7.js"
+  ]
+}

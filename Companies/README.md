@@ -3,15 +3,16 @@
 ---
 
 # Introduction
-There are currently `5` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.
+There are currently `6` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.
 # Table of Companies
- | Company Name | Company Type | Company Role | Company Region | 
- |  ---  |  ---  |  ---  |  ---  | 
- |  [Mediumroast, Inc.](./MediumroastInc.md)  | Private | Owner | AMER | 
- |  [Atlassian Corp](./AtlassianCorp.md)  | Public company | Competitor | AMER | 
- |  [monday.com Ltd.](./mondaycomLtd.md)  | Public | Competitor | EMEA | 
- |  [HUBSPOT INC](./HUBSPOTINC.md)  | Public | Competitor | AMER | 
- |  [Aha! Labs Inc.](./AhaLabsInc.md)  | Private | Competitor | AMER | 
+ | Company Name | Company Type | Company Role | Company Region | Total Interactions | 
+ |  ---  |  ---  |  ---  |  ---  |  ---  | 
+ |  [Atlassian Corp](./AtlassianCorp.md)  | Public company | Competitor | AMER | 13 | 
+ |  [monday.com Ltd.](./mondaycomLtd.md)  | Public | Competitor | EMEA | 10 | 
+ |  [HUBSPOT INC](./HUBSPOTINC.md)  | Public | Competitor | AMER | 4 | 
+ |  [Aha! Labs Inc.](./AhaLabsInc.md)  | Private | Competitor | AMER | 6 | 
+ |  [ProductPlan](./ProductPlan.md)  | Private | Competitor | AMER | 10 | 
+ |  [Mediumroast, Inc.](./MediumroastInc.md)  | Private | Owner | AMER | 10 | 
 
 
 ---
@@ -25,22 +26,6 @@ There are currently `5` companies in the repository. The table below lists all a
 {
   "type": "FeatureCollection",
   "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -117.078046,
-          32.934771
-        ]
-      },
-      "properties": {
-        "name": "Mediumroast, Inc.",
-        "description": "Finally, we deeply believe our software and services must make it easy for our users to generate outputs that are well sourced with clear source attribution. That’s because we see guiding users to easily generate source attribution and giving full credit to the author(s) battles disinformation. ",
-        "role": "Owner",
-        "url": "https://www.mediumroast.io"
-      }
-    },
     {
       "type": "Feature",
       "geometry": {
@@ -103,6 +88,38 @@ There are currently `5` companies in the repository. The table below lists all a
         "description": "Aha! is a very different type of high-growth SaaS company. We are self-funded, fully remote, and have no sales team. And we are highly profitable — surpassing $100M in annual recurring revenue in early 2022. We aspire toward a world of lovable software built by happy teams. Today, more than 1 million product builders at many of the worlds best-known companies trust our software to build a better future.",
         "role": "Competitor",
         "url": "https://www.aha.io"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.69102,
+          34.414227
+        ]
+      },
+      "properties": {
+        "name": "ProductPlan",
+        "description": "ProductPlan is a roadmap software designed to help product teams plan and communicate their strategies. Its roadmaps are highly visual, communication-focused and built for team collaboration.",
+        "role": "Competitor",
+        "url": "https://www.productplan.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.078046,
+          32.934771
+        ]
+      },
+      "properties": {
+        "name": "Mediumroast, Inc.",
+        "description": "Finally, we deeply believe our software and services must make it easy for our users to generate outputs that are well sourced with clear source attribution. That’s because we see guiding users to easily generate source attribution and giving full credit to the author(s) battles disinformation. ",
+        "role": "Owner",
+        "url": "https://www.mediumroast.io"
       }
     }
   ]

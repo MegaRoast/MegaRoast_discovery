@@ -24,7 +24,7 @@
 ### Tags
 
 
-![data%20lambda](https://img.shields.io/badge/data%20lambda-blue?style=for-the-badge)&nbsp;![diferencial%20para](https://img.shields.io/badge/diferencial%20para-blue?style=for-the-badge)&nbsp;![management%20software](https://img.shields.io/badge/management%20software-blue?style=for-the-badge)&nbsp;![management%20tools](https://img.shields.io/badge/management%20tools-blue?style=for-the-badge)&nbsp;![n%20m](https://img.shields.io/badge/n%20m-blue?style=for-the-badge)&nbsp;![para%20quem%20trabalha](https://img.shields.io/badge/para%20quem%20trabalha-blue?style=for-the-badge)&nbsp;![pricing%20free%20plan](https://img.shields.io/badge/pricing%20free%20plan-blue?style=for-the-badge)&nbsp;![project%20management](https://img.shields.io/badge/project%20management-blue?style=for-the-badge)&nbsp;![quantities%20of%20data](https://img.shields.io/badge/quantities%20of%20data-blue?style=for-the-badge)&nbsp;![retail%20media](https://img.shields.io/badge/retail%20media-blue?style=for-the-badge)&nbsp;![trabalha%20ou](https://img.shields.io/badge/trabalha%20ou-blue?style=for-the-badge)
+![data%20lambda](https://img.shields.io/badge/data%20lambda-blue?style=for-the-badge)&nbsp;![diferencial%20para](https://img.shields.io/badge/diferencial%20para-blue?style=for-the-badge)&nbsp;![long%20term](https://img.shields.io/badge/long%20term-blue?style=for-the-badge)&nbsp;![management%20software](https://img.shields.io/badge/management%20software-blue?style=for-the-badge)&nbsp;![management%20tools](https://img.shields.io/badge/management%20tools-blue?style=for-the-badge)&nbsp;![para%20quem%20trabalha](https://img.shields.io/badge/para%20quem%20trabalha-blue?style=for-the-badge)&nbsp;![pricing%20free%20plan](https://img.shields.io/badge/pricing%20free%20plan-blue?style=for-the-badge)&nbsp;![project%20management](https://img.shields.io/badge/project%20management-blue?style=for-the-badge)&nbsp;![quantities%20of%20data](https://img.shields.io/badge/quantities%20of%20data-blue?style=for-the-badge)&nbsp;![retail%20media](https://img.shields.io/badge/retail%20media-blue?style=for-the-badge)&nbsp;![trabalha%20ou](https://img.shields.io/badge/trabalha%20ou-blue?style=for-the-badge)
 
 
 ---
@@ -58,26 +58,26 @@
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-10%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-14-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-The text discusses the importance of creating abstracts for research papers, which involves summarizing key concepts and the essence of the work in a simple and understandable way for laymen. The author provides an example of how to create such an abstract based on the given text material.
+In recent years, roadmaps have gained popularity among product teams, yet confusion persists about their true purpose. Roadmaps serve as high-level overviews of strategy, timing, and feature work, helping both internal and external stakeholders understand how activities align with company goals.
 
 ### Least Similar Interaction:  [What Is Product Discovery? Tips and Best Practices To Determine Exactly What Customers Need | Aha! software](/Interactions%2FWhat%20Is%20Product%20Discovery%3F%20Tips%20and%20Best%20Practices%20To%20Determine%20Exactly%20What%20Customers%20Need%20%7C%20Aha!%20software.pdf) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-3-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-The process of determining customer requirements for product development is known as product discovery. It involves identifying worthwhile problems, finding the best solutions, and adapting to meet evolving customer needs.
+Product discovery is the process of identifying customer needs to build products they love. It involves solving worthwhile problems, determining optimal solutions, and adapting to evolving needs.
 
 ---
 
 ## Interactions
-`monday.com Ltd.` has `10` interactions in the repository, and the reading time for all interactions is `23` minutes.
+`monday.com Ltd.` has `10` interactions in the repository, and the reading time for all interactions is `29` minutes.
 
 ###  [A Guide To Business Process Management Software](/Interactions%2FA%20Guide%20To%20Business%20Process%20Management%20Software.pdf) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Blog%20Post-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-6-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Business process management software streamlines repetitive tasks, identifies problems, and improves efficiency in organizations. BPM tools automate workflows, enhance collaboration between teams, and provide insights into performance metrics.
+This document discusses the importance of business process management (BPM) software for improving efficiency and reducing costs. It highlights that stagnant processes lead to frustration and hinder growth, while BPM tools help identify issues and solutions.
 
 #### Discovered tags
 
@@ -89,7 +89,7 @@ Business process management software streamlines repetitive tasks, identifies pr
 <details>
 <summary>Interaction abstract</summary>
 
-Business process management software streamlines repetitive tasks, identifies problems, and improves efficiency in organizations. BPM tools automate workflows, enhance collaboration between teams, and provide insights into performance metrics. Without these systems, manual processes can lead to frustration, low productivity, and lack of growth. Popular options include monday.com, Asana, Trello, Smartsheet, and Wrike, each with unique features and pricing plans. It's essential to choose the best fit based on budget, required features, and customer experiences.
+This document discusses the importance of business process management (BPM) software for improving efficiency and reducing costs. It highlights that stagnant processes lead to frustration and hinder growth, while BPM tools help identify issues and solutions. The guide explores five popular BPM systems, including monday.com, which helps organize tasks and teams. With BPM software, companies can optimize workflows, enhance collaboration, and gain insights into performance metrics using automated processes. The document then presents features and pricing for each of the five mentioned BPM tools to aid in decision-making.
 </details>
 
 
@@ -99,7 +99,7 @@ Business process management software streamlines repetitive tasks, identifies pr
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-In the upcoming year, freelancers in software development, digital marketing, and design will be highly sought after due to increasing demand in these fields. To succeed as a freelancer or expand client base, professionals should prioritize clear contracts for payment calculations based on expenses and hours worked, organize finances, and consider secure and affordable payment methods when working with foreign clients.
+O documento trata sobre dicas para freelancers começarem em 2024 com sucesso no mercado de desenvolvimento de software, marketing digital e design. A especialista Samyra Ramos da Higlobe destaca a importância de usar plataformas de gestão de tempo e organizar suas finanças.
 
 #### Discovered tags
 
@@ -111,7 +111,7 @@ In the upcoming year, freelancers in software development, digital marketing, an
 <details>
 <summary>Interaction abstract</summary>
 
-In the upcoming year, freelancers in software development, digital marketing, and design will be highly sought after due to increasing demand in these fields. To succeed as a freelancer or expand client base, professionals should prioritize clear contracts for payment calculations based on expenses and hours worked, organize finances, and consider secure and affordable payment methods when working with foreign clients. Staying informed about technology and market trends can also attract new clients. To avoid financial issues, freelancers should have well-defined limits and strategies for timely payment, as well as clear processes for client alterations. Online learning platforms like Alura, Udemy, and EBAC offer accessible and organized ways to improve skills. Workana, Fiverr, Freelancer.com, and Upwork are recommended platforms for finding new clients. Utilizing time management tools like Trello, Monday.com, or Asana can help meet project deadlines while prioritizing tasks based on importance and urgency.
+O documento trata sobre dicas para freelancers começarem em 2024 com sucesso no mercado de desenvolvimento de software, marketing digital e design. A especialista Samyra Ramos da Higlobe destaca a importância de usar plataformas de gestão de tempo e organizar suas finanças. Para iniciar ou crescer como freelancer, é fundamental calcular os custos do projeto, deixar tudo firmado em contrato e ter uma gestão financeira organizada. O mercado de freelancers deve continuar crescendo em 2024, com áreas como desenvolvimento de software sendo cada vez mais buscadas. Os profissionais devem estar atentos às tecnologias e tendências do mercado para atrair novos clientes. Para evitar problemas no orçamento, é preciso ter muita organização financeira e limites bem definidos. Plataformas como Workana, Fiverr e Upwork são indicadas para conseguir novos clientes.
 </details>
 
 
@@ -121,7 +121,7 @@ In the upcoming year, freelancers in software development, digital marketing, an
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-4%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Case%20Study-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-17-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Coles 360, the retail media division of Australian supermarket chain Coles, utilized monday.com's Work OS to rapidly scale its network and manage over 2,000 product campaigns across multiple channels in its first year of operation. By harmonizing legacy platforms and providing a cost-effective solution with built-in functionality and flexibility, monday.com enabled Coles 360 to centralize processes, improve visibility, and onboard new team members easily.
+Coles Supermarkets, operating for over a century, revamped its retail media division, Coles 360, to better serve Australian shoppers across all demographics. To succeed in the competitive retail media market, Coles 360 needed a cost-effective, reliable, and agile technology partner.
 
 #### Discovered tags
 
@@ -133,7 +133,7 @@ Coles 360, the retail media division of Australian supermarket chain Coles, util
 <details>
 <summary>Interaction abstract</summary>
 
-Coles 360, the retail media division of Australian supermarket chain Coles, utilized monday.com's Work OS to rapidly scale its network and manage over 2,000 product campaigns across multiple channels in its first year of operation. By harmonizing legacy platforms and providing a cost-effective solution with built-in functionality and flexibility, monday.com enabled Coles 360 to centralize processes, improve visibility, and onboard new team members easily. The platform's intuitive interface facilitated remote work culture, and its native integrations, such as PageProof, streamlined collaboration between teams, brand managers, and suppliers. With over 50 integrated monday.com boards, Coles 360 managed growth and continuous product development while maintaining reliability and security. The scalable and flexible business platform provided by monday.com was a crucial part of Coles 360's rapid journey from startup to significant player in the retail media sector.
+Coles Supermarkets, operating for over a century, revamped its retail media division, Coles 360, to better serve Australian shoppers across all demographics. To succeed in the competitive retail media market, Coles 360 needed a cost-effective, reliable, and agile technology partner. They chose monday.com due to its proven track record within Coles Group and its ability to scale as needed. Within weeks, Coles 360 was managing campaigns across multiple channels using monday.com's features. In the first year, they ran over 2,000 product campaigns across 11 media channels, demonstrating monday.com's effectiveness in streamlining complex processes.
 </details>
 
 
@@ -141,21 +141,21 @@ Coles 360, the retail media division of Australian supermarket chain Coles, util
 ###  [Going public? Here’s how to execute a successful IPO  - Raconteur](/Interactions%2FGoing%20public%3F%20Here%E2%80%99s%20how%20to%20execute%20a%20successful%20IPO%C2%A0%20-%20Raconteur.pdf) 
 
 
-![Reading%20time](https://img.shields.io/badge/Reading%20time-0%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-Unknown-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-Unknown-blue?style=for-the-badge)
+![Reading%20time](https://img.shields.io/badge/Reading%20time-6%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-7-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-This study explores the relationship between social media usage and self-esteem among college students. The research design employed a quantitative approach, utilizing a survey questionnaire to collect data from 200 participants.
+MacKinnon noted an increase in financial reporting obligations post-IPO, requiring a shift in employee behavior. Despite threats from Shell to leave and other listings eyeing deeper pools in the US, he believed these challenges positioned Moonpigs for resilience.
 
 #### Discovered tags
 
 
-
+![advisory%20firm%20dsw](https://img.shields.io/badge/advisory%20firm%20dsw-blue?style=for-the-badge)&nbsp;![alignment%20with%20long%20term](https://img.shields.io/badge/alignment%20with%20long%20term-blue?style=for-the-badge)&nbsp;![companys%20ipo](https://img.shields.io/badge/companys%20ipo-blue?style=for-the-badge)&nbsp;![financial%20advisory%20firm](https://img.shields.io/badge/financial%20advisory%20firm-blue?style=for-the-badge)&nbsp;![increase%20in%20financial%20reporting](https://img.shields.io/badge/increase%20in%20financial%20reporting-blue?style=for-the-badge)&nbsp;![pressure%20period%20for%20finance](https://img.shields.io/badge/pressure%20period%20for%20finance-blue?style=for-the-badge)
 
 
 
 <details>
 <summary>Interaction abstract</summary>
 
-This study explores the relationship between social media usage and self-esteem among college students. The research design employed a quantitative approach, utilizing a survey questionnaire to collect data from 200 participants. Results indicate that there is a positive correlation between social media use and self-esteem, with individuals who spend more time on social media reporting higher levels of self-esteem. However, this relationship is moderated by gender, with females experiencing a stronger association between social media usage and self-esteem than males. Implications for future research and practical applications are discussed. `````` CONCISE 4-5 SENTENCE ABSTRACT: The study investigates the correlation between social media use and self-esteem among college students. A quantitative approach was adopted, involving a survey questionnaire administered to 200 participants. Results reveal that there is a positive association between social media usage and self-esteem, with individuals who spend more time on social media reporting higher levels of self-esteem. However, this relationship is influenced by gender, as females exhibit a stronger connection between social media use and self-esteem than males. The study concludes with suggestions for future research and practical implications. `````` CONCISE 4-5 SENTENCE ABSTRACT: This paper examines the relationship between social media usage and self-esteem among college students. A quantitative study was conducted using a survey questionnaire distributed to 200 participants. Results indicate that there is a positive correlation between social media use and self-esteem, with individuals who spend more time on social media reporting higher levels of self-esteem. However, this relationship is moderated by gender, as females exhibit a stronger association between social media use and self-esteem than males. The study concludes with recommendations for future research and practical implications. `````` CONCISE 4-5 SENTENCE ABSTRACT: This paper investigates the connection between social media usage and self-esteem among college students. A quantitative study was carried out using a survey questionnaire distributed to 200 participants. Results reveal that there is a positive association between social media use and self-esteem, with individuals who spend more time on social media reporting higher levels of self-esteem. However, this relationship is influenced by gender, as females exhibit a stronger connection between social media use and self-esteem than males. The study concludes with suggestions for future research and practical implications. `````` CONCISE 4-5 SENTENCE ABSTRACT: This paper explores the relationship between social media usage and self-esteem among college students. A quantitative study was conducted using a survey questionnaire distributed to 200 participants. Results indicate that there is a positive correlation between social media use and self-esteem, with individuals who spend more time on social media reporting higher levels of self-esteem. However, this relationship is moderated by gender, as females exhibit a stronger association between social media use and self-esteem than males. The study concludes with recommendations for future research and practical implications. ````
+MacKinnon noted an increase in financial reporting obligations post-IPO, requiring a shift in employee behavior. Despite threats from Shell to leave and other listings eyeing deeper pools in the US, he believed these challenges positioned Moonpigs for resilience. Maguire emphasized the importance of building credibility and exploring partnership options amidst daily business operations. Martin warned that going public is not an end state but an ongoing process requiring regular investor communication. Lifford stressed the need for the right people around you to navigate unexpected twists during IPO preparations. Burstow highlighted the pressure of live webinars and the importance of complementary leadership styles between CEO and CFO during DSW Capital's IPO.
 </details>
 
 
@@ -165,7 +165,7 @@ This study explores the relationship between social media usage and self-esteem 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Monday.com, a software company, plans to integrate an AI assistant into its platform through a free update, equipped with four new tools. These include automated task generation, composing and rephrasing emails, summarizing text documents, and building formulas through natural language prompts.
+Monday.com plans to integrate an AI assistant into its platform, offering four new tools: automated task generation via natural language input; composing and rephrasing emails for sales CRM; summarizing text documents; and creating formulas through natural language prompts. This follows Microsoft's announcement of its AI assistant, Copilot, across 365 apps.
 
 #### Discovered tags
 
@@ -177,7 +177,7 @@ Monday.com, a software company, plans to integrate an AI assistant into its plat
 <details>
 <summary>Interaction abstract</summary>
 
-Monday.com, a software company, plans to integrate an AI assistant into its platform through a free update, equipped with four new tools. These include automated task generation, composing and rephrasing emails, summarizing text documents, and building formulas through natural language prompts. The aim is to simplify complicated operations for novice users and give them access to advanced tools originally designed for experts. Monday's announcement follows Microsoft's recent introduction of its own AI assistant, Copilot, which works across the 365 suite of apps. As AI assistants become more prevalent in workplace software, they have the potential to unlock new levels of functionality and efficiency.
+Monday.com plans to integrate an AI assistant into its platform, offering four new tools: automated task generation via natural language input; composing and rephrasing emails for sales CRM; summarizing text documents; and creating formulas through natural language prompts. This follows Microsoft's announcement of its AI assistant, Copilot, across 365 apps. Both companies aim to simplify operations and enhance user experience with AI-powered tools.
 </details>
 
 
@@ -187,7 +187,7 @@ Monday.com, a software company, plans to integrate an AI assistant into its plat
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Monday.com, a project management software company, has launched monday dev, a new product that centralizes software development tracking in one place for developers, engineers, and administrators to collaborate more easily with the rest of the organization. This workflow management software includes roadmap planning, sprint planning, review setting, daily standup meeting reviews, lifecycle management, and agile reports systems with burndown charts to detect potential problems.
+Monday.com Ltd., a project management software company, launched monday dev, a new tool for centralized software development tracking. It integrates with Monday.com's Work OS platform to facilitate collaboration among product, dev teams, and other departments.
 
 #### Discovered tags
 
@@ -199,7 +199,7 @@ Monday.com, a project management software company, has launched monday dev, a ne
 <details>
 <summary>Interaction abstract</summary>
 
-Monday.com, a project management software company, has launched monday dev, a new product that centralizes software development tracking in one place for developers, engineers, and administrators to collaborate more easily with the rest of the organization. This workflow management software includes roadmap planning, sprint planning, review setting, daily standup meeting reviews, lifecycle management, and agile reports systems with burndown charts to detect potential problems. Development teams can integrate their favorite developer tools and repositories such as GitHub, issue tracking with GitLab, and embed designs with Figma. Monday dev uses task automation with prebuilt, customizable recipes for assignments, notifications, and integrations with tools like Slack or GitHub. It also has a bug-tracking dashboard to report, track, and assign bugs to the right team for fixing. Organizations can integrate monday dev into their current workflow to better collaborate on software development and adhere to their preferred project management scheme using Work OS. Prices start at $9 per seat per month for a basic plan with limited amenities, while upgrading to $12 or $20 per seat per month provides additional features such as GitHub integration, Agile reporting, and higher automation limits.
+Monday.com Ltd., a project management software company, launched monday dev, a new tool for centralized software development tracking. It integrates with Monday.com's Work OS platform to facilitate collaboration among product, dev teams, and other departments. monday dev offers features like roadmap planning, sprint management, bug tracking, and task automation. It starts at $9 per seat per month, with additional features available in higher-tier plans.
 </details>
 
 
@@ -209,7 +209,7 @@ Monday.com, a project management software company, has launched monday dev, a ne
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-3-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-The new mondayDB data infrastructure, with a schemaless architecture, has been introduced by work management company monday.com to enhance the performance of its Work OS platform. This will enable customers to cope better with the flexibility offered by the system, which allows tasks and projects to be structured in different ways.
+Monday.com introduces mondayDB, a schemaless architecture boosting platform performance. It enhances scalability and speed for customers using the Work OS platform.
 
 #### Discovered tags
 
@@ -221,7 +221,7 @@ The new mondayDB data infrastructure, with a schemaless architecture, has been i
 <details>
 <summary>Interaction abstract</summary>
 
-The new mondayDB data infrastructure, with a schemaless architecture, has been introduced by work management company monday.com to enhance the performance of its Work OS platform. This will enable customers to cope better with the flexibility offered by the system, which allows tasks and projects to be structured in different ways. The initial rollout of mondayDB offers improved levels of scalability and speed, with boards loading five times faster and new use cases and custom workflows available. Real time data updates are also now possible, while a second phase of the release will enable dashboards to load 10 times faster from November.
+Monday.com introduces mondayDB, a schemaless architecture boosting platform performance. It enhances scalability and speed for customers using the Work OS platform. The new infrastructure allows for flexible use cases, unlike traditional rigid project management tools. MondayDB improves loading speeds fivefold and offers real-time data updates. Future phases aim to further enhance dashboard speeds and expand API capabilities.
 </details>
 
 
@@ -231,7 +231,7 @@ The new mondayDB data infrastructure, with a schemaless architecture, has been i
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-5-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Monday.com, a project management software company, has launched two new standalone products - Workforms and Canvas. While they can integrate with Monday's flagship product, the company's co-CEO Eran Zinman says that offering different tools for different jobs will allow each product to be better and attract new audiences who might not have considered Monday's software otherwise.
+Monday.com is expanding its project management suite with standalone apps: Workforms for forms and Canvas for collaborative whiteboards. Unlike rivals like Airtable or Asana, Monday.com aims to offer deep, specialized tools rather than a monolithic app.
 
 #### Discovered tags
 
@@ -243,7 +243,7 @@ Monday.com, a project management software company, has launched two new standalo
 <details>
 <summary>Interaction abstract</summary>
 
-Monday.com, a project management software company, has launched two new standalone products - Workforms and Canvas. While they can integrate with Monday's flagship product, the company's co-CEO Eran Zinman says that offering different tools for different jobs will allow each product to be better and attract new audiences who might not have considered Monday's software otherwise. The new apps are simpler than the core service and are aimed at businesses looking for forms and whiteboards. While they are fairly basic now, the company is committed to improving them over time. Both products will still lean on integration with the core Monday.com platform, which Zinman believes users will eventually gravitate towards as they discover more aspects of what the company offers.
+Monday.com is expanding its project management suite with standalone apps: Workforms for forms and Canvas for collaborative whiteboards. Unlike rivals like Airtable or Asana, Monday.com aims to offer deep, specialized tools rather than a monolithic app. The new apps cater to users seeking simpler solutions before committing to Monday.com's core platform. Both apps are basic but have independent development teams and roadmaps, with plans to improve over time. They integrate with Monday.com's Work OS for added functionality.
 </details>
 
 
@@ -253,7 +253,7 @@ Monday.com, a project management software company, has launched two new standalo
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Press%20Release-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-2-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-Monday.com has appointed Daniel Lereya as its first Chief Product and Technology Officer to drive product innovation and R&D growth. With seven years' experience at the company, Lereya will focus on growing its multi-product vision and operational efficiencies while strengthening execution for company growth.
+Monday.com has appointed Daniel Lereya as its first Chief Product and Technology Officer (CPTO). In this role, Lereya will lead product innovation and R&D growth, building on his seven-year tenure at monday.com where he previously headed R&D and oversaw Product teams.
 
 #### Discovered tags
 
@@ -265,7 +265,7 @@ Monday.com has appointed Daniel Lereya as its first Chief Product and Technology
 <details>
 <summary>Interaction abstract</summary>
 
-Monday.com has appointed Daniel Lereya as its first Chief Product and Technology Officer to drive product innovation and R&D growth. With seven years' experience at the company, Lereya will focus on growing its multi-product vision and operational efficiencies while strengthening execution for company growth. He will also be responsible for hiring across the Product, R&D, and Design teams in his new role, which combines product and technology disciplines to foster product development with a unique process of collaboration between team members from different disciplines. This dual leadership CPO/CTO model will allow Lereya to simultaneously lead the charge on product and technology innovation within Monday.com.
+Monday.com has appointed Daniel Lereya as its first Chief Product and Technology Officer (CPTO). In this role, Lereya will lead product innovation and R&D growth, building on his seven-year tenure at monday.com where he previously headed R&D and oversaw Product teams. As CPTO, Lereya will focus on growing monday.com's multi-product vision, hiring across key teams, and driving innovation with a dual leadership CPO/CTO model. He will report to co-CEOs Roy Mann and Eran Zinman.
 </details>
 
 
@@ -275,7 +275,7 @@ Monday.com has appointed Daniel Lereya as its first Chief Product and Technology
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Press%20Release-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-3-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
 
-The new version of mondayDB, called mondayDB 1.0, has been released by monday.com, the provider of a work operating system (Work OS). This updated infrastructure provides significant improvements in speed, scalability, and flexibility for constructing applications on top of the platform.
+Monday.com launches mondayDB 1.0, a reengineered infrastructure for its Work OS platform, offering dramatic improvements in speed and scalability. The new version also provides extended functionality for flexibility when building applications on the platform.
 
 #### Discovered tags
 
@@ -287,7 +287,7 @@ The new version of mondayDB, called mondayDB 1.0, has been released by monday.co
 <details>
 <summary>Interaction abstract</summary>
 
-The new version of mondayDB, called mondayDB 1.0, has been released by monday.com, the provider of a work operating system (Work OS). This updated infrastructure provides significant improvements in speed, scalability, and flexibility for constructing applications on top of the platform. Mondayschema less architecture, performance capabilities, and scalable design have always been emphasized. The new version enables organizations of any size to produce and manage complex and dynamic workflows with scale, agility, and performance in mind. The infrastructure has already been successfully rolled out to over 186,000 customers, and future updates are planned for later this year and the first half of 2024.
+Monday.com launches mondayDB 1.0, a reengineered infrastructure for its Work OS platform, offering dramatic improvements in speed and scalability. The new version also provides extended functionality for flexibility when building applications on the platform. MondayDB continues to innovate with its schema-less architecture, enabling organizations of any size to manage complex workflows at scale. Daniel Lereya, Chief Product and Technology Officer at monday.com, states that the company invested in a new infrastructure to adapt to extensive work scenarios and provide optimal performance for users. MondayDB 1.0 offers major performance improvements, supporting both Columnar data structure and Lambda architecture patterns, allowing it to scale as an organization grows. The schema-less architecture provides elasticity at scale, accommodating enterprises with unique needs. With mondayDB 1.0, customers enjoy enhanced capabilities such as quick-loading dashboards and boards with hundreds of thousands of leads. Over 186,000 customers have successfully adopted the new infrastructure, with plans for future updates including mondayDB 1.1 later this year and mondayDB 2.0 in early 2024.
 </details>
 
 
@@ -326,4 +326,4 @@ The new version of mondayDB, called mondayDB 1.0, has been released by monday.co
 ```
 
 ---
-[ **Created:** 2024-04-17T01:34:36.529Z by Michael Hay | **Modified:** 2024-07-18T19:37:47.540932 ]
+[ **Created:** 2024-04-17T01:34:36.529Z by Michael Hay | **Modified:** 2024-12-02T03:34:36.528978 ]
