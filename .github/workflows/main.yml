@@ -1,7 +1,7 @@
 name: Sync from Source Repository
 on:
-  # schedule:
-    # - cron: '0 0 * * *'  # Runs every night at midnight (UTC)
+  schedule:
+  - cron: '0 0 * * 1'  # Runs every night at midnight (UTC)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
