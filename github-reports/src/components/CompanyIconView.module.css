@@ -42,26 +42,32 @@
 }
 
 .tooltipItem {
-  margin-bottom: 8px;
-}
-
-.tooltipIcon {
-  margin-right: 8px;
-}
-
-.tooltipItem:last-child {
-  margin-bottom: 0;
-}
-
-.tooltipHeading {
-  font-weight: bold;
-  margin-bottom: 4px;
-  text-align: left; /* Left justify heading */
-  width: 100%; /* Ensure heading takes full width */
-}
-
-.tooltipContent {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Ensure content takes full width */
-}
+    margin-bottom: 8px;
+  }
+  
+  .tooltipItem:last-child {
+    margin-bottom: 0;
+  }
+  
+  .tooltipIcon {
+    margin-right: 8px;
+  }
+  
+  .tooltipHeading {
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: left; /* Left justify heading */
+    width: 100%; /* Ensure heading takes full width */
+  }
+  
+  .tooltipContent {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure content takes full width */
+  }
+  
+  .tooltipText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
