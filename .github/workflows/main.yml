@@ -15,12 +15,12 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.name 'mediumroast'
-          git config --global user.email 'michael.hay@mediumroast.io'
+          git config --global user.name 'miha42-github'
+          git config --global user.email 'mihay42@gmail.com'
 
       - name: Clone source repository
         env:
-          SOURCE_REPO_PAT: ${{ secrets.SOURCE_REPO_PAT }}
+          SOURCE_REPO_PAT: ${{ secrets.CLONE_FROM_SOURCE_REPO }}
         run: |
           git clone --depth=1 https://x-access-token:${{ secrets.CLONE_FROM_SOURCE_REPO }}@github.com/mediumroast/mediumroast_discovery.git /tmp/source-repo
 
