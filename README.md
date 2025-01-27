@@ -17,11 +17,11 @@ Direct navigation and modifcation of repository contents is not recommended. Ins
 The repository contains `2` active workflows. As of `January-2025` `30 minutes` have been consumed. A GitHub free plan has `2000 minutes` available per month meaning there is `1970` remaining minutes for the month. Assuming a repository with 10s of company objects, each workflow runs about a minute at midnight everyday. A good estimate for how many minutes are typically consumed in a month is 2 workflows/day x 1 min/workflow x 30 days/month or `60 min/month`. To get an accurate view of your consumed minutes for your planning please run `mrcli actions`. The statuses of five most recent workflow runs are provided below, links are included to enable more information on the workflows.
  | Workflow Name | Last Status | Run Time Message | Run Time | 
  |  ---  |  ---  |  ---  |  ---  | 
- |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12849030667)  | miha42-github executed prune-branches action | 1 minute(s) | 
- |  [basic-reporting](./.github/workflows/basic-reporting.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12848896503)  | miha42-github executed basic-reporting action | 1 minute(s) | 
- |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12839367405)  | miha42-github executed prune-branches action | 1 minute(s) | 
- |  [basic-reporting](./.github/workflows/basic-reporting.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12839206417)  | miha42-github executed basic-reporting action | 1 minute(s) | 
- |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12820606924)  | miha42-github executed prune-branches action | 1 minute(s) | 
+ |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12970055198)  | miha42-github executed prune-branches action | 1 minute(s) | 
+ |  [basic-reporting](./.github/workflows/basic-reporting.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12969918450)  | miha42-github executed basic-reporting action | 1 minute(s) | 
+ |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12960280730)  | miha42-github executed prune-branches action | 1 minute(s) | 
+ |  [basic-reporting](./.github/workflows/basic-reporting.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12960110372)  | miha42-github executed basic-reporting action | 1 minute(s) | 
+ |  [prune-branches](./.github/workflows/prune-branches.yml)  |  [success](https://github.com/mediumroast/mediumroast_discovery/actions/runs/12941189133)  | miha42-github executed prune-branches action | 1 minute(s) | 
 
 
 ## Branches
@@ -42,4 +42,4 @@ The repository contains `15` branches.  The last commit of each branch is listed
  |  [1733454688108](./tree/1733454688108)  | Michael Hay | 2024-12-06T03:11:36Z | Unlocking container [Studies] | 
  |  [gh-pages](./tree/gh-pages)  | mihay42 | 2024-10-12T04:29:11Z | Updates | 
  |  [github_page](./tree/github_page)  | mihay42 | 2024-10-12T04:29:36Z | Trying a github page | 
- |  [main](./tree/main)  | miha42-github | 2025-01-19T00:54:24Z | Update Foundation report | 
+ |  [main](./tree/main)  | miha42-github | 2025-01-26T00:52:05Z | Update Foundation report | 
